@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Catch the animal</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Catch the animal</h1>
+      <a href="#" class="start" id="start">Начать игру</a>
+    </div>
+
+    <div class="screen">
+      <h1>Выберите время</h1>
+      <ul class="time-list" id="time-list">
+        <li>
+          <button class="time-btn" data-time="10">
+            10 сек
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="20">
+            20 сек
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="30">
+            30 сек
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="40">
+            40 сек
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="screen">
+      <form action="http://127.0.0.1:5500/index.html" method="GET"><input class="btn-auto" type="submit" value="Начать с начала"></form>
+      <button id="auto-click" class="btn-auto">Авто клик</button>
+      <button id="stop-click" class="btn-auto">Стоп авто клик</button>
+      <h3>Осталось <span id="time">00:00</span></h3>
+      <div class="board" id="board"></div>
+    </div>
+    <audio id="audio" style="display:none">
+        <source src="sound/00985 (mp3cut.net).mp3" type="audio/mpeg"> Your browser does not support the audio
+        element.
+    </audio>
+    <audio id="audio" style="display:none">
+        <source src="sound/zvuk1.mp3" type="audio/mpeg"> Your browser does not support the audio
+        element.
+    </audio>
+    <audio id="audio" style="display:none">
+        <source src="sound/03218 (1) (mp3cut.net).mp3" type="audio/mpeg"> Your browser does not support the audio
+        element.
+    </audio>
+    <audio id="audio" style="display:none">
+      <source src="sound/zvonkiy-rezkiy-odinochnyiy-krik.mp3" type="audio/mpeg"> Your browser does not support the audio
+      element.
+  </audio>
+    <script src="index.js"></script>
+  </body>
+</html>
